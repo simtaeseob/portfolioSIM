@@ -1,0 +1,345 @@
+* {
+    color: #7D8293;
+    line-height: 120%;
+    margin: 0; 
+    padding: 0; 
+    box-sizing: border-box;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+.nav {
+
+    background-color: #F8F8FC;
+    z-index: 3;
+
+    position:fixed;
+    top: 0;
+    height: 64px;
+    padding: 0 3vw;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    transition: 0.3s ease-in;
+    transition-property: height;
+}
+.nav.scrolled {
+    background-color: #ffffff;
+    height: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5)
+}
+.nav a{
+    flex: 1 0 0;
+}
+.nav h1 {
+    flex: 1 0 0;
+
+    font-size: 16px;
+    font-weight: 900;
+    font-style: italic;
+
+    display: flex;
+    justify-content: flex-start;
+    
+}  
+.logo {
+    flex: 1 0 0;
+    font-size: 24px;
+    min-width: 160px;
+    
+    display: flex;
+    justify-content: center;
+
+}
+.nav_list {
+    flex: 1 0 0;
+
+    min-width: 260px;
+
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav_list a {
+    flex: 0 0 0;
+    margin-right: 16px;
+    text-decoration: none;
+    font-weight: 100;
+}
+.nav_list a:hover {
+    color: #ffffff;
+}   
+
+.body_sec1 {
+    position:fixed;
+    top: 40vh;
+    display: flex;
+    justify-content: space-between;
+    z-index: 1;
+}
+.name_list {
+    text-align: center;
+}
+
+.body_sec1 h3 {
+    font-size: 64px;
+    font-weight: 700;
+    color: #F8F8FC;
+    letter-spacing: -5px;
+    line-height: 100%;
+}
+.body_sec1 h5 {
+    margin-left: 32px;
+    font-size: 16px;
+    font-weight: 100;
+    color: #F8F8FC;
+    letter-spacing: 32px;
+    line-height: 100%;
+}
+.body_sec1 h3:last-child {
+    margin-top: 28px;
+    font-size: 40px;
+    font-weight: 400;
+    color: #DCDEE0;
+    letter-spacing: -5px;
+    line-height: 100%;
+}
+
+
+.edit_sec1 {
+    
+    height: 600px;
+    background-color: #5C5F6A;
+}
+
+.edit_sec1:nth-child(2n) {
+    height: 600px;
+    background-color: #4A4C54;
+}
+
+
+.edit_contents {
+    z-index: 2;
+    height: 600px;
+    width: 800px;
+    display: flex;
+    align-items:end;
+    margin-left:auto;
+    margin-right:auto;
+    align-items: bottom;
+    justify-content: space-between; 
+
+}
+
+.edit_contents a {
+    z-index: 1;
+    display: inline;
+    border-radius: 8px 8px 0 0;
+    flex: 1 0 0;
+    height: 480px;
+    margin-right: 20px;
+    background-color: #DCDEE0;
+}
+
+.a:last-child {
+    margin-right: 0px;
+}
+
+.book1 {
+    z-index: 2;
+    background-image: url("image/editing_1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.edit_contents a:hover {
+    background-color: #222222;
+    opacity: 60%;
+    /* background-size: cover;  */
+    transition: all ease 1s 0s;
+
+}
+
+
+
+.ed_dt_sec1 {
+    margin-top:64px;
+    background-color: #F8F8FC;
+    height: 600px;
+}
+.ed_dt_sec2 {
+    background-color: #4A4C54;
+    height: 600px;
+}
+.ed_dt_sec3 {
+    background-color: #F8F8FC;
+    height: 800px;
+}
+.ed_dt_sec4 {
+    background-color: #4A4C54;
+    height: 800px;
+}
+
+.ed_dt_content1 {
+    margin-left: auto;
+    margin-right: auto;
+    width: 1440px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.ed_dt_content1:nth-child(1) {
+    height: 600px;
+    align-items: center;
+}
+.ed_dt_content1:nth-child(2) {
+    height: 600px;
+    align-items: center;
+}
+.ed_dt_content1:nth-child(3) {
+    height: 800px;
+    align-items: center;
+}
+.ed_dt_content1:nth-child(4) {
+    height: 800px;
+    align-items: end;
+}
+.ed_dt_mainimg {
+    margin-left: 243px;
+    margin-top: 20px;
+    width: 345px;
+    height: 560px;
+
+}
+.ed_img_main {
+    background-image: url("image/editing_1.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.ed_dt_maintit {
+    text-align: right;
+    margin-right: 243px;
+    margin-left: auto;
+    width: 400px;
+    margin-left: auto;
+}
+
+.ed_dt_maintit h1 {
+    font-size: 64px;
+    font-weight: 700;
+    color: #37383C;
+    letter-spacing: -5px;
+    line-height: 100%;
+}
+
+.ed_dt_maintit h3 {
+    margin-top: 20px;
+    margin-bottom: 40px;
+    font-size: 40px;
+    font-weight: 400;
+    color: #37383C;
+    line-height: 100%;
+}
+
+.ed_dt_maintit h5 {
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 400;
+    color: #37383C;
+    line-height: 160%;
+}
+.ed_dt_style {
+    height: 560px;
+    width: 950px;
+}
+
+.ed_img_style {
+    margin-left: 120px;
+    background-image: url("image/editing_2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.ed_dt_stytit {
+   width: 345px;
+   margin-left: auto; 
+}
+.ed_dt_stytit h4 {
+
+    margin-bottom: 12px;
+    font-size: 32px;
+    font-weight: 700;
+    color: #FFFFFF;
+    line-height: 160%;
+}
+
+.ed_dt_stytit h5 {
+    text-align: justify;
+    font-size: 16px;
+    font-weight: 400;
+    color: #FFFFFF;
+    line-height: 160%;
+}
+
+.page {
+    width: 223px;
+    height: 348px;
+    background-color: #DCDEE0;
+    margin-right: 20px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+
+}
+
+.page:nth-child(1) {
+    background-image: url("image/editing_3.png");
+}
+.page:nth-child(2) {
+    background-image: url("image/editing_4.png");
+}
+.page:nth-child(3) {
+    background-image: url("image/editing_5.png");
+}
+.page:nth-child(4) {
+    background-image: url("image/editing_6.png");
+}
+.page:nth-child(5) {
+    background-image: url("image/editing_7.png");
+}
+.page:nth-child(6) {
+    background-image: url("image/editing_8.png");
+}
+
+
+.page:last-child {
+    margin-right: 0px;
+}
+.good_page {
+    width: 342px;
+    height: 532px;
+    background-color: #DCDEE0;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.good_page:first-child {
+    margin-left: 120px;
+    background-image: url("image/editing_9.png");
+}
+.good_page:last-child {
+    background-image: url("image/editing_10.png");
+}
+.good_text {
+    width: 372px;
+    height: 532px;
+    margin-left: 20px;
+    margin-right: 20px;
+} 
